@@ -1,0 +1,106 @@
+.card {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: grid;
+    font-family: 'Trebuchet MS', sans-serif;
+    height: 360px;
+    margin: 36px auto;
+    width: 630px;
+    position: relative;
+  }
+
+  .nombre {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 70px;
+  }
+
+  .ID {
+    position: absolute;
+    font-size: 30px;
+    left: 5px;
+    top: 65px;
+  }
+
+  .bandera {
+    position: absolute;
+    right: 10px;
+    top: 130px;
+  }
+  
+  .back {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .yellow {
+    background-color: #F0E68C;
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 3;
+  }
+  
+  .top-dots{
+    background: radial-gradient(#4cc9c8 20%, transparent 19%),
+                radial-gradient(#4cc9c8 20%, transparent 19%),
+                transparent;
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    grid-column: 8 / span 6;
+    grid-row: 2 / span 3;
+  }
+  
+  .personal-info {
+    grid-column: 2 / span 6;
+    grid-row: 5 / span 6;
+  }
+  
+  .personal-info p:first-of-type {
+    /* font-size: 18px; */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .personal-info p:nth-of-type(2) {
+    /* font-size: 12px; */
+    margin-bottom: 15px;
+  }
+  
+  .bottom-dots {
+    background: radial-gradient(#4cc9c8 20%, transparent 19%),
+                radial-gradient(#4cc9c8 20%, transparent 19%),
+                transparent;
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    grid-column: 1 / span 8;
+    grid-row: 11 / span 2;
+    z-index: 2;
+  }
+  
+  .pink {
+    background-color: #FFD700;
+    grid-column: 8 / span 5;
+    grid-row: 10 / span 3;
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .item {
+    width: calc(100% / 5 - 20px);
+    margin: 10px;
+    background-color: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+  }
